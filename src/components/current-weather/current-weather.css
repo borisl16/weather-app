@@ -41,3 +41,30 @@
     letter-spacing: -5px;
     margin: 10px 0;
 }
+
+.details {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.parameter-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameter-label {
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.parameter-value {
+    text-align: right;
+    font-weight: 600; 
+    font-size: 12px;
+}
+
+.parameter-label.top {
+    font-weight: 700;
+    font-size: 12px;
+}
