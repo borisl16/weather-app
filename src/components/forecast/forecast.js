@@ -1,5 +1,5 @@
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from "react-accessible-accordion";
-
+import './forecast.css';
 
 const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -19,8 +19,8 @@ const Forecast = ({ data }) => {
                             <AccordionItemButton>
                                 <div className="daily-item">
                                     <img alt="weather" className="icon-small" src={`icons/${item.weather[0].icon}.png`} />
-                                    <label className="day">{forecastDays[index]}</label>
-                                    <label className="descriptio"> {item.weather[0].description}</label>
+                                    <label className="day">{forecastDays[index]} </label>
+                                    <label className="description"> {item.weather[0].description} </label>
                                     <label className="min-max"> Min - Max temp: {Math.round(item.main.temp_min)}°C - {Math.round(item.main.temp_max)}°C</label>
                                 </div>
                             </AccordionItemButton>
